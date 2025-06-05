@@ -1,10 +1,18 @@
 import React from 'react'
 import { Outlet } from 'react-router'
+import NavBar from '../components/NavBar'
 
 function MainLayout() {
-  return (
+return (
     <div>
-      <Outlet/>
+<NavBar />
+<div className='p-8'>
+
+
+ <Outlet  />
+
+</div>
+  
     </div>
   )
 }
